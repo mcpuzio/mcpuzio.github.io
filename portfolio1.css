@@ -156,6 +156,15 @@ ul li a i {
  	/*text-indent: 80px;*/
  }
 
+ #mailto {
+ 	color: black;
+ 	padding: 9px;
+ 	vertical-align:	middle;
+ 	padding-left: 40px;
+ 	font-size: 18px;
+ 	/*text-indent: 80px;*/
+ }
+
 ul img {
     width: 50px;
     height: auto;
