@@ -1,78 +1,220 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
-		<link type="text/css" rel="stylesheet" href="portfolio1.css"/>
-		<title>Michael Puzio's Portfolio</title>
-	</head>
-	<body>
+  <html>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  <body>
 
-		<nav>
-				<li><a href="index.html">Mike</a></li>
-				<li><a href="portfolio2.html">Projects</a></li>		
-		</nav>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+        <i class="fa fa-search"></i>
+      </a>
+    </div>
 
-		<h1>Michael C. Puzio</h1>
-		<br><br>
-		<h4 id="h4">Fullstack Web Developer</h4>
-		<br><br>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    </div>
+  </div>
 
-		
-		<!-- <div id="share_bar">
-			<ul>
-				<li id="fb_share"><a href="http://www.facebook.com/sharer.php"><img src="images/facebook_share.png"></a></li>
-				<li id="twtr_share"><a href="https://twitter.com/share"><img src="images/twitter_share.png"></a></li>
-				<li id="rddt_share"><a href="http://reddit.com/submit"><img src="images/reddit_share.jpeg"></a></li>
-				<li id="lkdn_share"><a href="http://www.linkedin.com/shareArticle?mini=true"><img src="images/linkedin_share.png"></a></li>
-				<li id="slack_share"><a href=""><img src="images/slack_share.jpeg"></a></li>
-				<li id="hpcht_share"><a href=""><img src="images/hipchat_share.png"></a></li>
-				<li id="tmblr_share"><a href="http://www.tumblr.com/share/link"><img src="images/tumblr_share.png"></a></li>
-				<li id="blgr_share"><a href=""><img src="images/blogger_share.png"></a></li>
-			</ul>
-		</div> -->
-		
-		<div id="body1">
-			<div id="subbody1">
-				<p>
-					Welcome,<br> 
-					and find assorted here the work of an artist. Seeking unique and interesting design and a lot of talent? You need not look further. Browse my portfolio. You'll be interested to find a variety of topics and skills on display. Whatever your needs in terms of developing a fullstack web site or app, I can achieve it.
-				</p>
-			</div>
-		</div>
-		<div id="polska"></div>
-		<div id="body1">
-			<div id="subbody1">
-				<p>
-				I'm a Polish-American guy from New Jersey who has visions of a better world and future, one where technology makes life easier, healthier, and more interesting. As of recently, I'm a former student of the New York Code + Design Academy, November 2015 session. I enjoy studying and reading about history, politics, current affairs, design, engineering, finance, and sustainable practices. In the past, I have worked as a political party committeeman, attempting to advocate and communicate on issues to my local party members. My civic engagement also extends to two runs for office, in 2010 and 2014. In the future, I hope to leverage my skills in negotiation, Polish, and coding, in order to develop new interactive and engaging ways for people to participate in public affairs and work on issues I care about most, such as sustainability, health, and cultural awareness.
-				</p>
-				<ul id="skills" list-style-type:none>
-					<li><img src="images/logoz.png"></li>
-					<!-- <li><img src="images/css.png">CSS</li>
-					<li><img src="images/javascript.png">JavaScript</li> -->
-					<li><img src="images/rorr.jpeg" id="ruby"></li>
-				</ul>
-				<br>
-				<p>
-				This is just a taste of some of my skills. I'm a constant learner, and looking for new ways to innovate and adopt new skills.
-				</p>
-			</div>
-		</div>
-	
-		<div id="ptlist3">
-			<ul list-style-type:none id="contact">
-				<li><a href="mailto:mcpuzio@gmail.com" id="mailto" target="_newtab"><i class="fa fa-envelope fa-2x" src="@Url.Content("~/Content/HomePage/email.png")" alt="email"></i>mcpuzio@gmail.com</a></li>
-				<li><a href="https://facebook.com/mcpuzio"><i class="fa fa-facebook-official fa-2x"></i>Facebook</a></li>
-				<li><a href="https://github.com/mcpuzio/NYCDAportfolioandprojects.git"><i class="fa fa-github fa-2x"></i>GitHub</a></li>
-				<li><a href=""><i class="fa fa-whatsapp fa-2x"></i>WhatsApp</a></li>
-			</ul>
-		</div>
-			
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MICHAEL <span class="w3-hide-small">C.</span> PUZIO</span>
+    </div>
+  </div>
 
-		<script type="text/javascript">(function() { var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true; po.src = '//api.at.getsocial.io/widget/v1/gs_async.js?id=0c9c6e'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s); })();</script>
-		<script src="script.js"></script>
-	</body>
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center">ABOUT ME</h3>
+    <p class="w3-center"><em>I love design</em></p>
+    <p>Since my precocious youth, when I was drawing like a regular Michelangelo or Rapheal, I have always had a desire to create and put my thoughts to a medium. Design and development have always been in my mind, and were a part of my raising. From my painting lessons as a kid, to the weekends with my Polish father out in the backyard or in the driveway learning about carpentry, machinery, construction, or mechanics - the sense of need to create something and ensure it had a purposeful, yet beautiful, design was instilled in me. In the years after, I had always attempted to keep at the cutting edge. I had always had a knack for learning new software for design purposes - from AutoCAD to CNC code. But it wasn't until I saw the beauty and art of web development through a friend, that I realized how much of my experience, skills, and interests could be applied to a vocation and artistry. Which brings us here...
+    <div class="w3-row"></p>
+      <div class="w3-col m6 w3-center w3-padding-large">
+        <p><b><i class="fa fa-user w3-margin-right"></i>Mike</b></p><br>
+        <img src="img/self-webdev.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="50%" height="auto">
+      </div>
+
+      <!-- Hide this text on small devices -->
+      <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <p>Welcome to my website.  I am Michael C. Puzio.<br><br>An artist.<br><br> A designer.<br><br> A thinker.<br><br> A technologist.<br><br> A web developer.</p>
+      </div>
+    </div>
+    <p class="w3-large w3-center w3-padding-16">I'm really good at:</p>
+    <p class="w3-wide"><i class="fa fa-camera"></i>Content Development</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+    </div>
+  </div>
+
+  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">14+</span><br>
+      Partners
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">55+</span><br>
+      Projects Done
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">89+</span><br>
+      Happy Clients
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">150+</span><br>
+      Meetings
+    </div>
+  </div>
+
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    </div>
+  </div>
+
+  <!-- Container (Portfolio Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">MY WORK</h3>
+    <p class="w3-center"><em>Here are some of my latest works.<br> Click on the images to make them bigger</em></p><br>
+
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m3">
+        <img src="img/linden311-1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Linden 311 - Login.">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="img/linden311-2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Linden 311 - Login.">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="img/linden311-3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Linden 311 - an app to report potholes and road damage to City Hall.">
+      </div>
+
+<!--       <div class="w3-col m3">
+        <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+      </div>
+    </div> -->
+
+    <div class="w3-row-padding w3-center w3-section">
+      <div class="w3-col m3">
+        <img src="img/puzioforcouncil-1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The official website for the Puzo for Council 2016 campaign.">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="img/puzioforcouncil-2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="More info about my platform, from my official campaign page.">
+      </div>
+
+<!--       <div class="w3-col m3">
+        <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+      </div> -->
+<!--       <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> -->
+    </div>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+  <!-- Third Parallax Image with Portfolio Text -->
+  <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-black w3-wide">CONTACT</span>
+    </div>
+  </div>
+
+  <!-- Container (Contact Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="contact">
+    <h3 class="w3-center">WHERE I WORK</h3>
+    <p class="w3-center"><em>I'd love your feedback!<br>Let's work together to have me build your project.</em></p>
+
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m4 w3-container">
+        <!-- Add Google Maps -->
+        <div id="googleMap" class="w3-round-large w3-greyscale" style="z-index: 1; height: 400px; width: 100%; padding: 0px; border-width: 0px;"></div>
+      </div>
+      <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Kraków, Poland<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1 (908) -718-1118<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mcpuzio@gmail.com<br>
+        </div>
+        <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-right w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity p3"></i>
+      <!-- <i class="fa fa-instagram w3-hover-opacity"></i> -->
+      <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
+      <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
+      <!-- <i class="fa fa-twitter w3-hover-opacity"></i> -->
+      <i class="fa fa-linkedin w3-hover-opacity p3"></i>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+   
+  <!-- Add Google Maps -->
+  <script type="text/javascript" src="script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFaYBJ6LqU5z99XlypspYvkMCicGbTCaw&callback=myMap"></script>
+
+  <!--
+  To use this code on your website, get a free API key from Google.
+  Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+  -->
+
+  </body>
 </html>

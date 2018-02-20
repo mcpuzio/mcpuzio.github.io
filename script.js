@@ -1,30 +1,38 @@
-$(document).ready(function() {
-		// $("body").click(
-		// function(){
-		// 	$("#wrapper1").slideUp();
+function myMap() {
+var mapProp = {
+    center: new google.maps.LatLng(50.061728, 19.937405),
+    zoom: 12,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+var map = new 
+google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
 
-		// 	$("h1").fadeIn(2000);
-		// 		});
-		// $("p").click(function(){
-  //       $(this).hide();
-  		$("body").hover(
-		function(){
-			$("#h4").hide({
-    	});	});
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
 
-    	$("body").mousedown(
-		function(){
-			$("#wrapper1").animate({
-        left: '550px',
-        height: '150px',
-        width: '150px',
-        speed: 5000,
-            	});	});
-    });
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
 
-$(document).ready(function() {
-	$("body").mouseenter(
-		function(){
-			$("#ptlist"&"ptlist2").fadeIn({
-        300,
-    	});	}); });
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
