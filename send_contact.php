@@ -9,7 +9,7 @@ $mail_from="$customer_mail";
 $header="from: $name &lt;$mail_from>";
 
 // Enter your email address
-$to ='mcpuzio@gmail.com';
+$to = "\"" . { Mike } . "\" <" . { mcpuzio@gmail.com } . ">";
 
 $send_contact=mail($to,$subject,$message,$header);
 
