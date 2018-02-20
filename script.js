@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 function myMap() {
 var mapProp = {
     center: new google.maps.LatLng(50.061728, 19.937405),
@@ -37,18 +36,3 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
-=======
-$(document).ready(function() {
-	$('body').mousemove(function() {
-		$('h1').fadeIn(2300);
-	});
-
-});
-
-// $(document).ready(function() {
-// 	$("body").mouseenter(
-// 		function(){
-// 			$("#ptlist"&"ptlist2").fadeIn({
-//         300,
-//     	});	}); });
->>>>>>> Stashed changes
